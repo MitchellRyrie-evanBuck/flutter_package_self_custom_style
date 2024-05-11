@@ -1,7 +1,7 @@
 name: flutter_package_self_custom_style
 description: "A new Flutter package project."
 version: 0.0.1
-homepage: 
+homepage: https://github.com/afl-lxw/flutter_package_self_custom_style
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
