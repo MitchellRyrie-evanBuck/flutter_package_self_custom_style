@@ -1,7 +1,20 @@
 library flutter_package_self_custom_style;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:flutter/material.dart';
+
+class StyleWidget extends StatelessWidget {
+  const StyleWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.blue,
+      width: 100,
+      height: 100,
+      alignment: Alignment.center,
+      child: const Text("data"),
+    );
+  }
 }
