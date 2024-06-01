@@ -25,8 +25,9 @@ class StyleWidget extends StatelessWidget {
 }
 
 class ContributionsScreen extends StatelessWidget {
-  final List<int> contributions =
-      List.generate(112, (index) => index % 7); // 模拟的提交数据
+  final List<int> contributions = List.generate(112, (index) => index % 7);
+
+  ContributionsScreen({super.key}); // 模拟的提交数据
 
   @override
   Widget build(BuildContext context) {
