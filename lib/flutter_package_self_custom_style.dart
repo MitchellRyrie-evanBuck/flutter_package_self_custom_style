@@ -9,12 +9,23 @@ class StyleWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.blue,
-      width: 100,
-      height: 100,
-      alignment: Alignment.center,
-      child: const Text("data"),
+    late double screenWidth = MediaQuery.of(context).size.width - 60;
+
+    return Column(
+      children: [
+        Container(
+          alignment: Alignment.center,
+          child: Text(
+            'Github',
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
+        ),
+        Container(
+          width: screenWidth,
+          height: 140,
+          color: Colors.black12,
+        )
+      ],
     );
   }
 }
